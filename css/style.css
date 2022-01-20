@@ -11,10 +11,6 @@ html {
     font-family: sans-serif;
 }
 
-.inner-img span {
-    display: inline-block;
-}
-
 
 
 /* style */
@@ -136,6 +132,7 @@ article h1 {
 }
 
 .prize {
+    display: inline-block;
     font-size: 0.8em;
 }
 
@@ -150,21 +147,25 @@ article h1 {
 
 /* bonus */
 
+*:hover {
+    transition: 1s;
+}
+
 /* image cont up */
 
 .cont.up .inner-img.left:hover {
     background-image: url(../img/1b.webp);
-    transition: 1s;
+    
 }
 
 .cont.up .inner-img.center:hover {
     background-image: url(../img/2b.webp);
-    transition: 1s;
+    
 }
 
 .cont.up .inner-img.right:hover {
     background-image: url(../img/3b.webp);
-    transition: 1s;
+    
 }
 
 /* image cont down */
@@ -172,18 +173,19 @@ article h1 {
 
 .cont.down .inner-img.left:hover {
     background-image: url(../img/4b.webp);
-    transition: 1s;
+    
 }
 
 .cont.down .inner-img.center:hover {
     background-image: url(../img/5b.webp);
-    transition: 1s;
+    
 }
 
 .cont.down .inner-img.right:hover {
     background-image: url(../img/6b.webp);
-    transition: 1s;
+    
 }
+
 
 
 
