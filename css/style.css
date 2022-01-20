@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+
+
+.container {
+    width: 1000px;
+    margin: 2em auto;
+}
+
+.cards {
+    width: calc(100% / 3);
+    height: 500px;
+}
+
+.inner-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/1.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.inner-img span {
+    display: inline-block;
+}
+
+.heart {
+    padding: 0.2em;
+    background-color: white;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    font-size: 1.5em;
+    text-align: center;
+    width: 2.1rem;
+}
+
+.discount,
+.sost {
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+    padding: 0.2em 0.5em;
+    font-size: .7em;
+}
+
+.discount {
+    background-color:#eb0037;
+}
+
+.sost {
+    left: 3.5em;
+    background-color: #00875a;
+}
+
+.desc {
+    margin-top: 0.5rem;
+}
+
+.brend,
+.prize.old {
+    color: gray;
+}
+
+article h1 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.prize.new {
+    color: red;
+}
+
+.prize.old {
+    text-decoration: line-through;
+}
+
