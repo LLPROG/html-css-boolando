@@ -1,4 +1,6 @@
-* {
+/* reset */
+
+* {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,23 +12,75 @@ html {
 
 
 
+/* style */
+
 .container {
-    width: 1000px;
+    width: 1200px;
     margin: 2em auto;
 }
 
 .cards {
-    width: calc(100% / 3);
+    float: left;
+    width: calc((100% - 2rem) / 3) ;
     height: 500px;
+    margin-bottom: 6rem;
 }
 
-.inner-img {
+.cont::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cards.left {
+    margin-right:1rem;
+}
+
+.cards.right {
+    margin-left:1rem;
+}
+
+
+
+.cont.up .inner-img,
+.cont.down .inner-img
+ {
     width: 100%;
     height: 100%;
-    background-image: url(../img/1.webp);
     background-size: cover;
     position: relative;
 }
+
+/* image cont up */
+
+.cont.up .inner-img.left {
+    background-image: url(../img/1.webp);
+}
+
+.cont.up .inner-img.center {
+    background-image: url(../img/2.webp);
+}
+
+.cont.up .inner-img.right {
+    background-image: url(../img/3.webp);
+}
+
+/* image cont down */
+
+
+.cont.down .inner-img.left {
+    background-image: url(../img/4.webp);
+}
+
+.cont.down .inner-img.center {
+    background-image: url(../img/5.webp);
+}
+
+.cont.down .inner-img.right {
+    background-image: url(../img/6.webp);
+}
+
+
 
 .inner-img span {
     display: inline-block;
@@ -61,6 +115,10 @@ html {
     background-color: #00875a;
 }
 
+.sost.last {
+    left: 0;
+}
+
 .desc {
     margin-top: 0.5rem;
 }
@@ -73,6 +131,14 @@ html {
 article h1 {
     font-size: 0.8em;
     text-transform: uppercase;
+}
+
+.brend {
+    font-size: 0.8em;
+}
+
+.prize {
+    font-size: 0.8em;
 }
 
 .prize.new {
