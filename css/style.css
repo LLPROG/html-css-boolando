@@ -98,6 +98,8 @@ html {
     color: white;
     padding: 0.2em 0.5em;
     font-size: .7em;
+    font-weight: bold;
+
 }
 
 .discount {
@@ -147,7 +149,7 @@ article h1 {
 
 /* bonus */
 
-*:hover {
+.cont *:hover {
     transition: 1s;
 }
 
