@@ -136,6 +136,8 @@ article h1 {
 .prize {
     display: inline-block;
     font-size: 0.8em;
+    font-weight: bold;
+
 }
 
 .prize.new {
